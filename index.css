@@ -1,0 +1,285 @@
+:root {
+  --bg-color: #c9ecf6;
+  --bg-btn: rgb(48, 88, 251);
+  --hover-bg: black;
+  --btn-text: white;
+  --btn-text-hover: #b8eeff;
+  --nav-bg: #3bc2eb;
+  --shadow: grey;
+  --circle: rgb(59, 121, 247);
+  --circle2: rgb(15, 88, 244);
+  --circle3: rgb(0, 60, 255);
+}
+
+body{
+  background-color: var(--bg-color);
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  /* justify-content: center; */
+  flex-direction: row;
+  .banner-logo {
+    display: flex;
+    justify-content: left;
+    padding-right: 20%;
+    .logo {
+      display: flex;
+      margin: 3px 0px 3px 8px;
+      width: 38px;
+      height: 35px;
+      box-sizing: border-box;
+    }
+    .logo-detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .logo-text {
+        font-family: "Plus Jakarta Sans";
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: #2952ce;
+      }
+      .logo-line {
+        margin-left: 1.5px;
+        font-family: "DM Sans";
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: #5c85ff;
+      }
+    }
+  }
+  .banner-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    height: fit-content;
+
+    .adress {
+      display: inline-flex;
+      padding-right: 5%;
+
+      .location {
+        text-align: center;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+      }
+      .locationtxt {
+        width: 12rem;
+        font-size: large;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+    .callbox {
+      display: inline-flex;
+      padding-right: 5%;
+
+      .call-contact {
+        text-align: center;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+      }
+      .callme {
+        width: 8rem;
+        /* font-size: large; */
+        text-align: center;
+        padding: 10px;
+      }
+    }
+    .apt-btn {
+      text-align: center;
+      padding: 5px;
+      padding-left: 15%;
+      .btn {
+        width: 20rem;
+        height: 35px;
+        color: var(--btn-text);
+        font-size: larger;
+        letter-spacing: 8px;
+        background-color: var(--bg-btn);
+        border-radius: 25px;
+      }
+      .btn:hover {
+        background-color: var(--hover-bg);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        font-weight: bold;
+        color: var(--btn-text-hover);
+      }
+    }
+  }
+}
+.navbar {
+  background-color: var(--nav-bg);
+  display: flex;
+  border-radius: 50px;
+  margin: 2.5% 8%;
+  justify-content: center;
+  .home {
+    padding: 15px 35px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 50px;
+
+    background-color: var(--nav-bg);
+    letter-spacing: 2px;
+  }
+  .home:hover {
+    color: var(--btn-text);
+  }
+  .about {
+    padding: 15px 35px;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--nav-bg);
+    letter-spacing: 2px;
+  }
+  .about:hover {
+    color: var(--btn-text);
+  }
+  .services {
+    padding: 15px 35px;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--nav-bg);
+    letter-spacing: 2px;
+  }
+  .services:hover {
+    color: var(--btn-text);
+  }
+  .page {
+    padding: 15px 35px;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--nav-bg);
+    letter-spacing: 2px;
+    .pages {
+      background-color: var(--nav-bg);
+    }
+    img {
+      width: 12px;
+      height: 12px;
+      background-color: var(--nav-bg);
+    }
+  }
+  .page:hover {
+    color: var(--btn-text);
+  }
+  .blog {
+    padding: 15px 35px;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--nav-bg);
+    letter-spacing: 2px;
+    .blogs {
+      background-color: var(--nav-bg);
+    }
+    img {
+      width: 12px;
+      height: 12px;
+      background-color: var(--nav-bg);
+    }
+  }
+  .blog:hover {
+    color: var(--btn-text);
+  }
+  .contact {
+    padding: 15px 35px;
+    font-size: large;
+    font-weight: bold;
+    background-color: var(--nav-bg);
+    letter-spacing: 2px;
+  }
+  .contact:hover {
+    color: var(--btn-text);
+  }
+  .searching-form {
+    padding: 10px 35px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--nav-bg);
+    .searching {
+      background-color: var(--btn-text);
+      width: 350px;
+      padding: 10px 40px 10px 15px;
+      border-radius: 100px;
+      outline: none;
+    }
+    .search-btn {
+      border: none;
+      border-radius: 50px;
+      margin-left: -44px;
+      height: 80%;
+      margin-top: 4px;
+    }
+    .search-btn img {
+      width: 30px;
+      height: 29px;
+      border: none;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  .detail {
+    width: 50%;
+    padding: 4rem;
+    .video {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .doctor {
+    padding: 3rem;
+    .ddetail {
+      width: 32rem;
+      height: 33rem;
+      border-radius: 50%;
+      padding-left: 2rem;
+      border: 2px dotted var(--shadow);
+      .circl {
+        border-radius: 50%;
+        position: absolute;
+        border: 2px dotted var(--shadow);
+        width: 30rem;
+        height: 30rem;
+        box-shadow: var(--shadow);
+        z-index: 1;
+        .circles {
+          margin-left: 4rem;
+          margin-top: 4rem;
+          padding: 4rem;
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          background-color: var(--circle);
+          border: 35px solid var(--circle2);
+          box-shadow: 0 0 0 35px var(--circle3);
+          img{
+            /* mix-blend-mode: multiply; */
+            margin: -100%;
+            margin-top: -7rem;
+            width: 31rem;
+            height: 22rem;
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+}
