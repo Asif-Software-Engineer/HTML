@@ -9,9 +9,11 @@
   --circle: rgb(59, 121, 247);
   --circle2: rgb(15, 88, 244);
   --circle3: rgb(0, 60, 255);
+  --head-txt: orange;
+  --text: #021943;
 }
 
-body{
+body {
   background-color: var(--bg-color);
 }
 .banner {
@@ -101,6 +103,7 @@ body{
       padding: 5px;
       padding-left: 15%;
       .btn {
+        cursor: pointer;
         width: 20rem;
         height: 35px;
         color: var(--btn-text);
@@ -122,13 +125,14 @@ body{
   background-color: var(--nav-bg);
   display: flex;
   border-radius: 50px;
-  margin: 2.5% 8%;
+  margin: 2.5% 5%;
   justify-content: center;
   .home {
     padding: 15px 35px;
     font-size: large;
     font-weight: bold;
     border-radius: 50px;
+    color: var(--text);
 
     background-color: var(--nav-bg);
     letter-spacing: 2px;
@@ -139,6 +143,7 @@ body{
   .about {
     padding: 15px 35px;
     font-size: large;
+    color: var(--text);
     font-weight: bold;
     background-color: var(--nav-bg);
     letter-spacing: 2px;
@@ -149,6 +154,7 @@ body{
   .services {
     padding: 15px 35px;
     font-size: large;
+    color: var(--text);
     font-weight: bold;
     background-color: var(--nav-bg);
     letter-spacing: 2px;
@@ -159,6 +165,7 @@ body{
   .page {
     padding: 15px 35px;
     font-size: large;
+    color: var(--text);
     font-weight: bold;
     background-color: var(--nav-bg);
     letter-spacing: 2px;
@@ -177,6 +184,7 @@ body{
   .blog {
     padding: 15px 35px;
     font-size: large;
+    color: var(--text);
     font-weight: bold;
     background-color: var(--nav-bg);
     letter-spacing: 2px;
@@ -195,6 +203,7 @@ body{
   .contact {
     padding: 15px 35px;
     font-size: large;
+    color: var(--text);
     font-weight: bold;
     background-color: var(--nav-bg);
     letter-spacing: 2px;
@@ -236,22 +245,78 @@ body{
   flex-direction: row;
   .detail {
     width: 50%;
-    padding: 4rem;
-    .video {
-      img {
-        width: 30px;
-        height: 30px;
+    margin: 2.5% 5%;
+    h3 {
+      color: var(--head-txt);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h1 {
+      color: var(--text);
+      text-transform: capitalize;
+      font-size: 5rem;
+      strong{
+        color: var(--circle3);
       }
+    }
+    .buttons{
+      display: flex;
+      flex-direction: row;
+    }
+    .contact-btn {
+      background-color: var(--bg-btn);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 2rem;
+      padding: 0.5rem 2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .contact-btn:hover {
+      background-color: var(--hover-bg);
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      font-weight: bold;
+      color: var(--btn-text-hover);
+    }
+    .video {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      border-radius: 50px;
+      text-transform: capitalize;
+      overflow: hidden;
+      margin: 2rem 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        width: 43px;
+        height: 28px;
+      }
+    }
+    .video:hover {
+      background-color: var(--hover-bg);
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      font-weight: bold;
+      color: var(--btn-text-hover);
+      padding-right: 1.5rem;
     }
   }
   .doctor {
     padding: 3rem;
+    width: 50%;
     .ddetail {
       width: 32rem;
       height: 33rem;
       border-radius: 50%;
       padding-left: 2rem;
       border: 2px dotted var(--shadow);
+      .sheild{
+        background-repeat: no-repeat;
+      }
       .circl {
         border-radius: 50%;
         position: absolute;
@@ -270,7 +335,7 @@ body{
           background-color: var(--circle);
           border: 35px solid var(--circle2);
           box-shadow: 0 0 0 35px var(--circle3);
-          img{
+          img {
             /* mix-blend-mode: multiply; */
             margin: -100%;
             margin-top: -7rem;
