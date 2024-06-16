@@ -17,19 +17,23 @@ body {
   background-color: var(--bg-color);
 }
 .banner {
-  width: 100%;
-  height: 100%;
+  width: 1500px;
+  height: 50px;
   display: flex;
-  box-sizing: border-box;
-  /* justify-content: center; */
   flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+  /* overflow: hidden; */
   .banner-logo {
     display: flex;
     justify-content: left;
     padding-right: 20%;
+    margin-left: 0;
     .logo {
       display: flex;
-      margin: 3px 0px 3px 8px;
+      margin: 10px 0px 3px 8px;
       width: 38px;
       height: 35px;
       box-sizing: border-box;
@@ -70,12 +74,12 @@ body {
 
       .location {
         text-align: center;
-        padding: 5px;
+        padding-top: 10px;
         width: 30px;
         height: 30px;
       }
       .locationtxt {
-        width: 12rem;
+        width: 14rem;
         font-size: large;
         text-align: center;
         padding: 10px;
@@ -87,13 +91,13 @@ body {
 
       .call-contact {
         text-align: center;
-        padding: 5px;
-        width: 30px;
+        padding-top: 10px;
+        width: 25px;
         height: 30px;
       }
       .callme {
-        width: 8rem;
-        /* font-size: large; */
+        width: 10rem;
+        font-size: large;
         text-align: center;
         padding: 10px;
       }
@@ -104,13 +108,14 @@ body {
       padding-left: 15%;
       .btn {
         cursor: pointer;
-        width: 20rem;
-        height: 35px;
+        width: 300px;
+        height: 45px;
         color: var(--btn-text);
         font-size: larger;
         letter-spacing: 8px;
         background-color: var(--bg-btn);
         border-radius: 25px;
+        align-content: center;
       }
       .btn:hover {
         background-color: var(--hover-bg);
@@ -125,112 +130,59 @@ body {
   background-color: var(--nav-bg);
   display: flex;
   border-radius: 50px;
-  margin: 2.5% 5%;
+  margin: 3rem ;
   justify-content: center;
-  .home {
-    padding: 15px 35px;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 50px;
-    color: var(--text);
-    cursor: pointer;
-    background-color: var(--nav-bg);
-    letter-spacing: 2px;
-  }
-  .home:hover {
-    color: var(--btn-text);
-  }
-  .about {
-    padding: 15px 35px;
-    font-size: large;
-    color: var(--text);
-    font-weight: bold;
-    cursor: pointer;
-    background-color: var(--nav-bg);
-    letter-spacing: 2px;
-  }
-  .about:hover {
-    color: var(--btn-text);
-  }
-  .services {
-    padding: 15px 35px;
-    font-size: large;
-    color: var(--text);
-    font-weight: bold;
-    cursor: pointer;
-    background-color: var(--nav-bg);
-    letter-spacing: 2px;
-  }
-  .services:hover {
-    color: var(--btn-text);
-  }
-  .page {
-    padding: 15px 35px;
-    font-size: large;
-    color: var(--text);
-    font-weight: bold;
-    cursor: pointer;
-    background-color: var(--nav-bg);
-    letter-spacing: 2px;
-    .pages {
-      background-color: var(--nav-bg);
+  align-items: center;
+  /* position: fixed; */
+  /* overflow: hidden; */
+  ul {
+    list-style: none;
+    width: 100%;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        padding: 15px 35px;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 50px;
+        color: var(--text);
+        cursor: pointer;
+        letter-spacing: 2px;
+      }
+      a:hover {
+        color: var(--btn-text);
+      }
+      .dropdown-menu {
+        background-color: var(--bg-color);
+        .dropdown-item {
+          font-weight: bold;
+          border-radius: none !important;
+        }
+      }
+      .dropdown-item:hover {
+        background-color: var(--text);
+        color: var(--btn-text-hover);
+      }
     }
-    img {
-      width: 12px;
-      height: 12px;
-      background-color: var(--nav-bg);
-    }
-  }
-  .page:hover {
-    color: var(--btn-text);
-  }
-  .blog {
-    padding: 15px 35px;
-    font-size: large;
-    color: var(--text);
-    font-weight: bold;
-    cursor: pointer;
-    background-color: var(--nav-bg);
-    letter-spacing: 2px;
-    .blogs {
-      background-color: var(--nav-bg);
-    }
-    img {
-      width: 12px;
-      height: 12px;
-      background-color: var(--nav-bg);
-    }
-  }
-  .blog:hover {
-    color: var(--btn-text);
-  }
-  .contact {
-    padding: 15px 35px;
-    font-size: large;
-    color: var(--text);
-    font-weight: bold;
-    cursor: pointer;
-    background-color: var(--nav-bg);
-    letter-spacing: 2px;
-  }
-  .contact:hover {
-    color: var(--btn-text);
   }
   .searching-form {
-    padding: 10px 35px;
+    /* padding: 10px 0; */
     border-radius: 50px;
     display: flex;
     flex-direction: row;
+    max-height: 3rem;
     background-color: var(--nav-bg);
     .searching {
       background-color: var(--btn-text);
       width: 350px;
-      padding: 10px 40px 10px 15px;
+      padding: 10px;
       border-radius: 100px;
       outline: none;
     }
     .search-btn {
-      border: none;
+      background-color: transparent;
+      border: transparent;
       border-radius: 50px;
       margin-left: -44px;
       height: 80%;
@@ -238,11 +190,11 @@ body {
       margin-top: 4px;
     }
     .search-btn img {
-      width: 30px;
-      height: 29px;
+      height: 2.3rem;
       border: none;
       border-radius: 50px;
       object-fit: cover;
+      padding-right: 3rem;
     }
   }
 }
@@ -357,14 +309,14 @@ body {
     }
   }
 }
-.partners{
+.partners {
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--btn-text);
   padding: 5% 3%;
-  .partnr{
+  .partnr {
     text-transform: uppercase;
     font-size: large;
     text-align: center;
@@ -374,138 +326,138 @@ body {
     letter-spacing: 2px;
     padding-bottom: 3rem;
   }
-  .partnr-logo{
+  .partnr-logo {
     display: flex;
     flex-direction: row;
-    .partnr1{
+    .partnr1 {
       display: flex;
       flex-direction: row;
       padding-right: 1rem;
-      img{
+      img {
         width: 3rem;
         height: 3rem;
         padding: 1rem;
       }
-      .name{
+      .name {
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
-        p1{
+        p1 {
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 3px;
           font-size: large;
         }
-        p2{
+        p2 {
           text-transform: uppercase;
           font-family: Plus Jakarta Sans;
           font-size: small;
         }
       }
     }
-    .partnr2{
+    .partnr2 {
       display: flex;
       flex-direction: row;
       padding-right: 1rem;
-      img{
+      img {
         width: 3rem;
         height: 3rem;
         padding: 1rem;
       }
-      .name{
+      .name {
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
-        p1{
+        p1 {
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 3px;
           font-size: large;
         }
-        p2{
+        p2 {
           text-transform: uppercase;
           font-family: Plus Jakarta Sans;
           font-size: small;
         }
       }
     }
-    .partnr3{
+    .partnr3 {
       display: flex;
       flex-direction: row;
       padding-right: 1rem;
-      img{
+      img {
         width: 3rem;
         height: 3rem;
         padding: 1rem;
       }
-      .name{
+      .name {
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
-        p1{
+        p1 {
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 3px;
           font-size: large;
         }
-        p2{
+        p2 {
           text-transform: uppercase;
           font-family: Plus Jakarta Sans;
           font-size: small;
         }
       }
     }
-    .partnr4{
+    .partnr4 {
       display: flex;
       flex-direction: row;
       padding-right: 1rem;
-      img{
+      img {
         width: 3rem;
         height: 3rem;
         padding: 1rem;
       }
-      .name{
+      .name {
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
-        p1{
+        p1 {
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 3px;
           font-size: large;
         }
-        p2{
+        p2 {
           text-transform: uppercase;
           font-family: Plus Jakarta Sans;
           font-size: small;
         }
       }
     }
-    .partnr5{
+    .partnr5 {
       display: flex;
       flex-direction: row;
       padding-right: 1rem;
-      img{
+      img {
         width: 3rem;
         height: 3rem;
         padding: 1rem;
       }
-      .name{
+      .name {
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
-        p1{
+        p1 {
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 3px;
           font-size: large;
         }
-        p2{
+        p2 {
           text-transform: uppercase;
           font-family: Plus Jakarta Sans;
           font-size: small;
@@ -513,4 +465,7 @@ body {
       }
     }
   }
+}
+.about{
+  height: 50rem;
 }
