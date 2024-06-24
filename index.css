@@ -130,7 +130,7 @@ body {
   background-color: var(--nav-bg);
   display: flex;
   border-radius: 50px;
-  margin: 3rem ;
+  margin: 3rem;
   justify-content: center;
   align-items: center;
   /* position: fixed; */
@@ -466,6 +466,81 @@ body {
     }
   }
 }
-.about{
-  height: 50rem;
+.about {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 3rem;
+  .about-left {
+    left: 0;
+    padding: 2rem;
+    .Maskgroup {
+      width: 390px;
+      height: 425px;
+      background-image: url("assets/images/oval.png"),
+        url("assets/images/Rectangle52.png");
+      background-blend-mode: overlay;
+      background-size: contain;
+    }
+    .trust {
+      background-color: var(--btn-text);
+      height: 10rem;
+      width: 15rem;
+      margin-top: -8rem;
+      margin-left: 16rem;
+      padding-top: 1rem;
+      padding-left: 0.7rem;
+      border: 10px solid rgba(255, 255, 255, 0.1) 17%;
+      border-radius: 10px;
+      backdrop-filter: invert(0%);
+      -webkit-backdrop-filter: invert(0%);
+      img {
+        width: 55px;
+        height: 55px;
+        border: 5px solid var(--bg-color);
+        border-radius: 50%;
+      }
+      .addImg {
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      .addImg:hover {
+        transform: scale(1.5);
+      }
+      .trust-txt1{
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+      .trust-txt2{
+        color: var(--head-txt);
+        font-size: large;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .about-right {
+    margin: 0 5rem 0 2rem;
+    .about-heading {
+      text-transform: uppercase;
+      font-size: large;
+      font-family: Plus Jakarta Sans;
+      font-weight: bold;
+      color: var(--head-txt);
+      letter-spacing: 2px;
+      padding-bottom: 2rem;
+    }
+    .about-txt1 {
+      font-weight: 600;
+      font-size: 46px;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      strong {
+        color: var(--circle);
+      }
+    }
+  }
 }
