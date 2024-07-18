@@ -1273,6 +1273,7 @@ body {
       "a b"
       "a c";
     width: 100%;
+    margin-top: 4rem;
     .a {
       grid-area: a;
       width: 100%;
@@ -1385,42 +1386,158 @@ body {
   }
 }
 .foot {
-  margin: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  .banner-logo {
-    display: flex;
-    justify-content: flex-start;
-    padding-right: 20%;
-    margin-left: -20%;
-    .logo {
+  width: 100%;
+  .container {
+    width: 100%;
+    margin: 3rem;
+    .banner-logo {
       display: flex;
-      margin: 10px 0px 3px 8px;
-      width: 38px;
-      height: 35px;
-      box-sizing: border-box;
-    }
-    .logo-detail {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .logo-text {
-        font-family: "Plus Jakarta Sans";
-        font-weight: 600;
-        font-size: 22px;
-        letter-spacing: 0.5px;
-        text-transform: capitalize;
-        color: #2952ce;
+      justify-content: flex-start;
+      .logo {
+        display: flex;
+        margin: 10px 0px 3px 8px;
+        width: 38px;
+        height: 35px;
+        box-sizing: border-box;
       }
-      .logo-line {
-        margin-left: 1.5px;
-        font-family: "DM Sans";
-        font-weight: 500;
-        font-size: 12px;
-        letter-spacing: 0.5px;
-        text-transform: capitalize;
-        color: #5c85ff;
+      .logo-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo-text {
+          font-family: "Plus Jakarta Sans";
+          font-weight: 600;
+          font-size: 22px;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          color: #2952ce;
+        }
+        .logo-line {
+          margin-left: 1.5px;
+          font-family: "DM Sans";
+          font-weight: 500;
+          font-size: 12px;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+          color: #5c85ff;
+        }
+      }
+    }
+    .social-items {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1.5rem 0 3rem 0;
+      .input-container {
+        display: flex;
+        align-items: center;
+        .input {
+          border: none;
+          border-radius: 50px;
+          margin-left: 0.5rem;
+          padding: 5px 5px 5px 20px;
+        }
+        img {
+          position: absolute;
+          margin-left: 11rem;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #5c85ff;
+          padding: 5px;
+          border: 1px solid var(--circle);
+          border-radius: 50px;
+        }
+      }
+      .socials {
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        .social-icon {
+          font-size: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .divider {
+      margin-top: 10px;
+      border-top: 2px solid gray;
+    }
+    .foot2 {
+      display: flex;
+      align-items: center;
+      max-height: 100%;
+      .left-content,
+      .right-content {
+        padding: 0 10px;
+        flex: content;
+      }
+      .left-content {
+        .f-head {
+          color: var(--head-txt);
+          font-size: large;
+          font-weight: bold;
+          letter-spacing: 3px;
+          text-align: left;
+          text-transform: capitalize;
+          width: 100%;
+        }
+        .f-time {
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 1.5rem 0 1rem 0;
+          border-bottom: 2px solid var(--circle);
+          .days {
+            padding: 5px 0;
+            color: var(--circle);
+            font-weight: bold;
+          }
+        }
+        .time {
+          font-weight: bold;
+          color: var(--circle);
+          justify-content: flex-end;
+          display: flex;
+          align-items: center;
+        }
+        .f-rights{
+          margin-top: 3rem;
+        }
+      }
+      .divider2 {
+        width: 2px;
+        max-height: 100%;
+        height: 280px;
+        background-color: gray;
+        margin: 2rem;
+      }
+      .right-content{
+        margin-top: 15px;
+        .row{
+          padding: 10px;
+          h5{
+            padding-bottom: 10px;
+          }
+          a{
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding-bottom: 15px;
+            color: var(--hover-bg);
+          }
+          a:hover{
+            color: var(--circle);
+            font-weight: bold;
+          }
+        }
       }
     }
   }
